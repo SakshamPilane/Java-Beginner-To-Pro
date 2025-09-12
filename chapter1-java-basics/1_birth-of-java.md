@@ -15,7 +15,6 @@ Programming languages have come a long way — from writing raw binary instructi
 ---
 
 ### 2. Assembly Language (1950s–60s) 🛠️
-![Assembly Icon](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg)
 
 - Introduced **mnemonics** (e.g., `MOV A, B`) instead of binary.  
 - Easier than machine code, but still **low-level**.  
@@ -33,7 +32,6 @@ Programming languages have come a long way — from writing raw binary instructi
 ---
 
 ### 4. C Language (1970s) ⚡
-![C Logo](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg)
 
 - General-purpose and efficient.  
 - Made **system-level programming** easier.  
@@ -43,7 +41,6 @@ Programming languages have come a long way — from writing raw binary instructi
 ---
 
 ### 5. C++ (1980s) ➕➕
-![C++ Logo](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg)
 
 - Extension of C with **Object-Oriented Programming (OOP)**.  
 - Great for large & complex software projects.  
@@ -78,3 +75,4 @@ flowchart LR
   C --> D[C Language]
   D --> E[C++]
   E --> F[Java]
+
