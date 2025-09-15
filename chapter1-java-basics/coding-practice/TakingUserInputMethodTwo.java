@@ -10,7 +10,7 @@ public class TakingUserInputMethodTwo {
         System.out.print("Enter Your Name: ");
         String name = br.readLine(); // .readLine() function or method is used to take input for strings only
         System.out.print("Enter Your Name: ");
-        int age = br.read(); // .read() function or method is used to take input for integers
+        int age = Integer.parseInt(br.readLine()); // .read() function or method is used to take input for integers
         System.out.print("Your name is: " + name + "\n");
         System.out.print("Your age is: " + age + "\n");
     }
