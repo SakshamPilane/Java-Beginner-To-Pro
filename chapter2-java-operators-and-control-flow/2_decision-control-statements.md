@@ -94,21 +94,25 @@ if (condition1)
 
 👉 Allows selection among multiple options, cleaner than many if-else-if.
 
+⚠️ **Note:**  
+Switch cases **cannot** be used with `float`, `double`, `boolean`, and `long`.
+- `float` and `double` → precision issues.
+- `boolean` → only two values (`true`/`false`), better handled with `if-else`.
+- `long` → not supported, as `switch` case labels must fit into the `int` range.
+
 ### Syntax:
 ```text
-switch (variable)
-        {
-            case value1:
-                // code for value1
-                break;
-            case value2:
-                // code for value2
-                break;
-            ...
-            default:
-                // code if none match
-        }
-
+switch (variable) {
+    case value1:
+        // code for value1
+        break;
+    case value2:
+        // code for value2
+        break;
+    ...
+    default:
+        // code if none match
+}
 ```
 
 ---
