@@ -7,7 +7,7 @@ public class PrintEvenNumbersInRange {
         System.out.print("Enter Range of Even Numbers to find?: ");
         range = input.nextInt();
         System.out.print("Even Numbers are: ");
-        while (i<=100)
+        while (i<=range)
         {
             System.out.print(i + " ");
             i+=2;
