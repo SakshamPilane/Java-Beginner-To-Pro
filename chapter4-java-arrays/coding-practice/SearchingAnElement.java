@@ -20,23 +20,15 @@ public class SearchingAnElement {
 
     public static void searchElement(int[] array, int element)
     {
-        int i, pos = 0;
-        boolean flagFound = false;
+        int i;
         for(i = 0; i < array.length; i++)
         {
             if(array[i] == element)
             {
-                flagFound = true;
-                pos = i+1;
-                break;
+                System.out.println("Element " + element + " found at position " + (i+1) + ".");
+                return;
             }
         }
-        if (flagFound)
-        {
-            System.out.println("Element " + element + " found at position " + pos + ".");
-        }
-        else {
-            System.out.println("Element " + element + " not found.");
-        }
+        System.out.println("Element " + element + " not found.");
     }
 }
