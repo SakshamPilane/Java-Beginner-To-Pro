@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// works with numbers only and might overflow when integers are larger
 public class ReverseAnArrayWithoutTempVariable {
     public static void main(String[] args)
     {
