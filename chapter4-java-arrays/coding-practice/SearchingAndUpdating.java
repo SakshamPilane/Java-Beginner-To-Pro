@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SearchingAnElement {
+public class SearchingAndUpdating {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
