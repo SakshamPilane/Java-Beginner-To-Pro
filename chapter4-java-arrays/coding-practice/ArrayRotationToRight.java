@@ -17,13 +17,17 @@ public class ArrayRotationToRight {
 
     public static void rotateArray(int[] array)
     {
-        int i, temp, next = array[array.length-1];
-        for (i = 0; i < array.length; i++)
+        int last = array[array.length - 1];
+        for (int i = array.length - 1; i > 0; i--)
         {
-            temp = array[i];
-            array[i] = next;
-            next = array[i+1];
-            array[i+1] = temp;
+            array[i] = array[i - 1];
+        }
+        array[0] = last;
+
+        System.out.print("Updated Array: ");
+        for (int val : array)
+        {
+            System.out.print(val+" ");
         }
     }
 }
