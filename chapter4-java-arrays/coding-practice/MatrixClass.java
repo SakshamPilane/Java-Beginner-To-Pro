@@ -60,8 +60,10 @@ public class MatrixClass {
 
         int[][] matrix2 = readMatrix(input, rows2, cols2);
 
+        System.out.println("First Matrix Entered: ");
         printMatrix(matrix1);
 
+        System.out.println("Second Matrix Entered: ");
         printMatrix(matrix2);
 
         System.out.println("Adding both Matrices....");
@@ -71,15 +73,9 @@ public class MatrixClass {
                 addedMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
             }
         }
+
         System.out.println("Added Matrix: ");
-        for (i = 0; i < rows1; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < cols1; j++) {
-                System.out.print(addedMatrix[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(addedMatrix);
     }
 
     public static void transposeMatrix(Scanner input)
@@ -91,24 +87,10 @@ public class MatrixClass {
 
         int i, j;
 
-        int[][] matrix = new int[rows][cols];
-
-        System.out.print("Enter Elements into Matrix: ");
-        for (i = 0; i < rows; i++) {
-            for (j = 0; j < cols; j++) {
-                matrix[i][j] = input.nextInt();
-            }
-        }
+        int[][] matrix = readMatrix(input, rows, cols);
 
         System.out.println("Matrix Entered: ");
-        for (i = 0; i < rows; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < cols; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(matrix);
 
         System.out.println("Transposing both Matrices....");
         int[][] copyMatrix = new int[cols][rows];
@@ -119,14 +101,7 @@ public class MatrixClass {
         }
 
         System.out.println("Transposed Matrix: ");
-        for (i = 0; i < cols; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < rows; j++) {
-                System.out.print(copyMatrix[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(copyMatrix);
     }
 
     public static void multiplyMatrix(Scanner input)
@@ -149,43 +124,15 @@ public class MatrixClass {
 
         int i, j;
 
-        int[][] matrix1 = new int[rows1][cols1];
+        int[][] matrix1 = readMatrix(input, rows1, cols1);
 
-        int[][] matrix2 = new int[rows2][cols2];
-
-        System.out.print("Enter Elements into First Matrix: ");
-        for (i = 0; i < rows1; i++) {
-            for (j = 0; j < cols1; j++) {
-                matrix1[i][j] = input.nextInt();
-            }
-        }
-
-        System.out.print("Enter Elements into Second Matrix: ");
-        for (i = 0; i < rows2; i++) {
-            for (j = 0; j < cols2; j++) {
-                matrix2[i][j] = input.nextInt();
-            }
-        }
+        int[][] matrix2 = readMatrix(input, rows2, cols2);
 
         System.out.println("First Matrix Entered: ");
-        for (i = 0; i < rows1; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < cols1; j++) {
-                System.out.print(matrix1[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(matrix1);
 
         System.out.println("Second Matrix Entered: ");
-        for (i = 0; i < rows2; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < cols2; j++) {
-                System.out.print(matrix2[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(matrix2);
 
         System.out.println("Multiplying both Matrices....");
         int[][] multipliedMatrix = new int[rows1][cols2];
@@ -199,14 +146,7 @@ public class MatrixClass {
         }
 
         System.out.println("Multiplied Matrix: ");
-        for (i = 0; i < rows1; i++) {
-            System.out.print("[ ");
-            for (j = 0; j < cols2; j++) {
-                System.out.print(multipliedMatrix[i][j] + " ");
-            }
-            System.out.print("]");
-            System.out.println();
-        }
+        printMatrix(multipliedMatrix);
     }
 
     public static int[][] readMatrix(Scanner input, int rows, int cols) {
@@ -221,7 +161,6 @@ public class MatrixClass {
     }
 
     public static void printMatrix(int[][] matrix) {
-        System.out.println("Matrix Entered: ");
         for (int[] row : matrix) {
             System.out.print("[ ");
             for (int val : row) {
