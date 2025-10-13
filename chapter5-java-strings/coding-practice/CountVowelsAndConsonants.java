@@ -34,18 +34,9 @@ public class CountVowelsAndConsonants {
         }
 
         System.out.println("Total Vowels found : " + vowelsCount);
-        System.out.print("Vowels found are: ");
-        for (int x = 0; x < j; x++)
-        {
-            System.out.print(vowels[x] + " ");
-        }
-        System.out.println();
+        System.out.println("Vowels found are: " + new String(vowels));
 
         System.out.println("Total Consonants found : " + consonantsCount);
-        System.out.print("Consonants found are: ");
-        for (int x = 0; x < k; x++)
-        {
-            System.out.print(consonants[x] + " ");
-        }
+        System.out.println("Consonants found are: " + new String(consonants));
     }
 }
