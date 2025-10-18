@@ -20,20 +20,18 @@ public class CountWordsInSentence {
 
     public static int countWords(char[] sentenceArray)
     {
-        int i, count = 0;
-        for (i = 0; i < sentenceArray.length; i++)
+        int count = 0;
+        boolean inWord = false;
+        for (char c : sentenceArray)
         {
-            while (i < sentenceArray.length && (sentenceArray[i] == ' ' || sentenceArray[i] == '\n' || sentenceArray[i] == '\t'))
+            if (c == ' ' || c == '\n' || c == '\t')
             {
-                i++;
+                inWord = false;
             }
-            if (i < sentenceArray.length && (sentenceArray[i] >= 'a' && sentenceArray[i] <= 'z'))
+            else if (!inWord && (c >= 'a' && c <= 'z'))
             {
+                inWord = true;
                 count++;
-                while (i < sentenceArray.length && (sentenceArray[i] != ' ' && sentenceArray[i] != '\n' && sentenceArray[i] != '\t'))
-                {
-                    i++;
-                }
             }
         }
         return count;
