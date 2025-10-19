@@ -6,53 +6,27 @@ public class FrequencyCounter {
     {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a String: ");
-        String str = input.nextLine();
+        String str = input.nextLine().toLowerCase();
 
-        char[] charArray = str.toLowerCase().toCharArray();
+        int[] freqArray = new int[128];
 
-        findCharacters(charArray);
+        findFrequency(freqArray,str);
         input.close();
     }
 
-    public static void findCharacters(char[] charArray)
-    {
-        int i, k;
-        char[] freqArray = new char[charArray.length];
-        for (i = 0, k = 0; i < charArray.length; i++) {
-            if (!searchCharacter(freqArray, charArray[i]))
-            {
-                freqArray[k++] = charArray[i];
-            }
-        }
-        findFrequency(Arrays.copyOf(freqArray, k), charArray);
-    }
-
-    public static boolean searchCharacter(char[] freqArray, char ch)
-    {
-        int i;
-        for (i = 0; i < freqArray.length; i++)
+    public static void findFrequency(int[] freqArray, String str) {
+        int i, ascii = 0;
+        for (i = 0; i < str.length(); i++)
         {
-            if (freqArray[i] == ch)
-            {
-                return true;
-            }
+            ascii = str.charAt(i);
+            freqArray[ascii]++;
         }
-        return false;
-    }
-
-    public static void findFrequency(char[] freqArray, char[] charArray)
-    {
-        int i, j;
+        System.out.println("Character frequencies:");
         for (i = 0; i < freqArray.length; i++) {
-            int count = 0;
-            for (j = 0; j < charArray.length; j++) {
-                if(charArray[j] == freqArray[i])
-                {
-                    count++;
-                }
+            if (freqArray[i] > 0) {
+                String times = (freqArray[i] > 1) ? "times" : "time";
+                System.out.println("'" + (char)i + "' occurred " + freqArray[i] + " " + times + ".");
             }
-            String wordString = (count >= 2) ? " times." : " time.";
-            System.out.println(freqArray[i] + " occurred " + count + wordString);
         }
     }
 }
