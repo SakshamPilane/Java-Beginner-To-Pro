@@ -82,7 +82,7 @@ public class ArrayBasics {
 
     public static void printReverseArray(int[] array)
     {
-        System.out.print("Array: ");
+        System.out.print("Reversed Array: ");
         for (int i = array.length - 1; i >= 0; i--)
         {
             System.out.print(array[i] + " ");
@@ -101,7 +101,7 @@ public class ArrayBasics {
 
     public static void findMax(int[] array)
     {
-        int max = Integer.MIN_VALUE;
+        int max = array[0];
         for (int j : array) {
             if (max < j) {
                 max = j;
@@ -112,7 +112,7 @@ public class ArrayBasics {
 
     public static void findMin(int[] array)
     {
-        int min = Integer.MAX_VALUE;
+        int min = array[0];
         for (int j : array) {
             if (min > j) {
                 min = j;
