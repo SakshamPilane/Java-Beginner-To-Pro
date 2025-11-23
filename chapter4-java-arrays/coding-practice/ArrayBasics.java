@@ -21,11 +21,12 @@ public class ArrayBasics {
             System.out.println("1. Display Array");
             System.out.println("2. Print Reverse Array");
             System.out.println("3. Find sum of all elements in array");
-            System.out.println("4. Find max of all elements in array");
-            System.out.println("5. Find min of all elements in array");
-            System.out.println("6. Count Number of elements in array");
-            System.out.println("7. Search for an element in array");
-            System.out.println("8. Exit");
+            System.out.println("4. Find avg of all elements in array");
+            System.out.println("5. Find max of all elements in array");
+            System.out.println("6. Find min of all elements in array");
+            System.out.println("7. Count Number of elements in array");
+            System.out.println("8. Search for an element in array");
+            System.out.println("9. Exit");
             System.out.println("************************************");
             int choice = input.nextInt();
             switch (choice)
@@ -40,15 +41,18 @@ public class ArrayBasics {
                     sumElements(array);
                     break;
                 case 4:
-                    findMax(array);
+                    avgElements(array);
                     break;
                 case 5:
-                    findMin(array);
+                    findMax(array);
                     break;
                 case 6:
-                    countElements(array);
+                    findMin(array);
                     break;
                 case 7:
+                    countElements(array);
+                    break;
+                case 8:
                     System.out.print("Enter Element to Search: ");
                     int element = input.nextInt();
                     int position = findElement(array, element);
@@ -60,7 +64,7 @@ public class ArrayBasics {
                         System.out.println("Element " + element + " not found in array");
                     }
                     break;
-                case 8:
+                case 9:
                     System.out.println("Exiting....");
                     input.close();
                     return;
@@ -88,6 +92,15 @@ public class ArrayBasics {
             System.out.print(array[i] + " ");
         }
         System.out.println();
+    }
+
+    public static void avgElements(int[] array)
+    {
+        int sum = 0;
+        for (int j : array) {
+            sum += j;
+        }
+        System.out.println("Average of all elements = " + sum/array.length);
     }
 
     public static void sumElements(int[] array)
@@ -124,7 +137,7 @@ public class ArrayBasics {
     public static void countElements(int[] array)
     {
         int count = 0;
-        for (int j : array) {
+        for (int _ : array) {
             count++;
         }
         System.out.println("Total Number of elements in array = " + count);
