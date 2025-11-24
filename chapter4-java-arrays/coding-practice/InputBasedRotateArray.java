@@ -27,13 +27,12 @@ public class InputBasedRotateArray {
 
         k = k % n;
         if (k < 0) {
-            k += n;          // convert negative rotations to positive
+            k += n;
         }
 
         if (k != 0) {
             rotateArray(array, k);
         }
-        rotateArray(array, k);
 
         System.out.print("Rotated Array: ");
         for (int num : array)
