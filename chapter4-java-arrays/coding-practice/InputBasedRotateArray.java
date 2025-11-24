@@ -8,6 +8,13 @@ public class InputBasedRotateArray {
         System.out.print("How many Elements?: ");
         int n = input.nextInt(), i;
 
+        if (n <= 0)
+        {
+            System.out.print("Size cannot be less than 0!");
+            System.out.print("Exiting....");
+            return;
+        }
+
         int[] array = new int[n];
 
         System.out.print("Enter elements into array of size " + array.length + " to rotate it: ");
@@ -16,13 +23,17 @@ public class InputBasedRotateArray {
         }
 
         System.out.print("By how many places do you want to rotate array: ");
-        int index = input.nextInt();
+        int k = input.nextInt();
 
-        if (index > n)
-        {
-            index = index % n;
+        k = k % n;
+        if (k < 0) {
+            k += n;          // convert negative rotations to positive
         }
-        rotateArray(array, index);
+
+        if (k != 0) {
+            rotateArray(array, k);
+        }
+        rotateArray(array, k);
 
         System.out.print("Rotated Array: ");
         for (int num : array)
@@ -34,10 +45,10 @@ public class InputBasedRotateArray {
         input.close();
     }
 
-    public static void rotateArray(int[] array, int index)
+    public static void rotateArray(int[] array, int k)
     {
-        rotate(array,0,index-1);
-        rotate(array,index,array.length-1);
+        rotate(array,0,k-1);
+        rotate(array,k,array.length-1);
         rotate(array,0,array.length-1);
     }
 
