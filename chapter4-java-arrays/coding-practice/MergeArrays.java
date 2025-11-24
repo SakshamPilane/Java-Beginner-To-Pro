@@ -31,9 +31,7 @@ public class MergeArrays {
     {
         int max_size = firstArray.length + secondArray.length;
         int[] mergedArray = new int[max_size];
-        for (int i = 0; i < firstArray.length; i++) {
-            mergedArray[i] = firstArray[i];
-        }
+        System.arraycopy(firstArray, 0, mergedArray, 0, firstArray.length);
         for (int i = 0, j = firstArray.length + i; i < secondArray.length; i++, j++) {
             mergedArray[j] = secondArray[i];
         }
