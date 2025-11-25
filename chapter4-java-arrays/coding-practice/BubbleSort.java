@@ -55,7 +55,6 @@ public class BubbleSort {
             }
             if (!swapped)
             {
-                System.out.println("Already Sorted!!");
                 break;
             }
         }
