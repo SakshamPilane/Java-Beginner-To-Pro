@@ -15,28 +15,11 @@ public class KadaneAlgo {
         int[] array = new int[n];
         System.out.println("Enter elements into array:");
         for (int i = 0; i < n; i++) array[i] = input.nextInt();
-
-        Result res = kadane(array);
-
-        System.out.println("Maximum contiguous subarray sum = " + res.maxSum);
-        System.out.println("Subarray indices: [" + res.start + ", " + res.end + "]");
-        System.out.println("Subarray elements: " + Arrays.toString(Arrays.copyOfRange(array, res.start, res.end + 1)));
-    }
-
-    // small helper class to return multiple values
-    static class Result {
-        int maxSum;
-        int start;
-        int end;
-        Result(int maxSum, int start, int end) {
-            this.maxSum = maxSum;
-            this.start = start;
-            this.end = end;
-        }
+        kadane(array);
     }
 
     // Kadane's algorithm
-    public static Result kadane(int[] arr) {
+    public static void kadane(int[] arr) {
         int maxSoFar = arr[0];
         int maxEndingHere = arr[0];
         int start = 0, end = 0, s = 0;
@@ -58,6 +41,8 @@ public class KadaneAlgo {
             }
         }
 
-        return new Result(maxSoFar, start, end);
+        System.out.println("Maximum contiguous subarray sum = " + maxSoFar);
+        System.out.println("Subarray indices: [" + start + ", " + end + "]");
+        System.out.println("Subarray elements: " + Arrays.toString(Arrays.copyOfRange(arr, start, end + 1)));
     }
 }
