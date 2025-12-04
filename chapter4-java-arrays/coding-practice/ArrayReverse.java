@@ -29,7 +29,7 @@ public class ArrayReverse {
 
     public static void revArray(int[] array)
     {
-        int n = array.length, i , j, temp = 0;
+        int n = array.length, i , j, temp;
         for (i = 0, j = n - 1; i < n / 2; i++, j--) {
             temp = array[i];
             array[i] = array[j];
