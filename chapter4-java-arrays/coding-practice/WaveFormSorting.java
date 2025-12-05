@@ -23,12 +23,10 @@ public class WaveFormSorting {
             if (i % 2 == 0)
             {
                 if (arr[i] > arr[i + 1]) swap(arr, i, i + 1);
-                System.out.println(Arrays.toString(arr));
             }
             else
             {
                 if (arr[i] < arr[i + 1]) swap(arr, i, i + 1);
-                System.out.println(Arrays.toString(arr));
             }
         }
     }
