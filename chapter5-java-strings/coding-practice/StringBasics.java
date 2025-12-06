@@ -11,6 +11,8 @@ public class StringBasics {
 
         System.out.println("Total characters in string are = " + countChar(str));
         countVowelsAndConsonants(str);
+        String ifPalindrome = (checkPalindrome(str)) ? " is a Palindrome." : " is a not Palindrome.";
+        System.out.println("String = " + str + ifPalindrome);
         input.close();
     }
 
@@ -39,5 +41,17 @@ public class StringBasics {
             }
         }
         System.out.println("Total vowels are = " + vowels + " and consonants are = " + consonants);
+    }
+
+    public static boolean checkPalindrome(String str)
+    {
+        char[] charArray = str.toLowerCase().toCharArray();
+        for (int i = 0, j = charArray.length - 1; i <= charArray.length/2; i++, j--) {
+            if (charArray[i] != charArray[j])
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
