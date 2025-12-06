@@ -19,7 +19,7 @@ public class StringBasics {
     public static int countChar(char[] charArray)
     {
         int count = 0;
-        for (char ch : charArray)
+        for (char _ : charArray)
         {
             count++;
         }
