@@ -28,9 +28,8 @@ public class StringBasics {
     public static void convertToLowerCase(String str) {
         char[] charArray = str.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
-            char c = charArray[i];
-            if (c >= 'A' && c <= 'Z') {
-                charArray[i] = (char)(c + 32);
+            if (charArray[i] >= 65 && charArray[i] <= 90) {
+                charArray[i] = (char) (charArray[i] + 32);
             }
         }
 
@@ -44,9 +43,8 @@ public class StringBasics {
     public static void convertToUpperCase(String str) {
         char[] charArray = str.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
-            char c = charArray[i];
-            if (c >= 'a' && c <= 'z') {
-                charArray[i] = (char)(c - 32);
+            if (charArray[i] >= 97 && charArray[i] <= 122) {
+                charArray[i] = (char) (charArray[i] - 32);
             }
         }
 
