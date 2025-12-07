@@ -22,6 +22,9 @@ public class StringBasics {
         String ifPalindrome = (checkPalindrome(str)) ? " is a Palindrome." : " is a not Palindrome.";
         System.out.println("String = " + str + ifPalindrome);
 
+        // count Digits
+        countAll(str);
+
         input.close();
     }
 
@@ -92,5 +95,23 @@ public class StringBasics {
             }
         }
         return true;
+    }
+
+    public static void countAll(String str)
+    {
+        int digits = 0, letters = 0, specialChar = 0;
+        char[] charArray = str.toLowerCase().toCharArray();
+        for (char c : charArray) {
+            if (c >= '1' && c <= '9') {
+                digits++;
+            } else if (c >= 'a' && c <= 'z') {
+                letters++;
+            } else {
+                specialChar++;
+            }
+        }
+        System.out.println("Total Digits = " + digits);
+        System.out.println("Total letters = " + letters);
+        System.out.println("Total Special Characters = " + specialChar);
     }
 }
