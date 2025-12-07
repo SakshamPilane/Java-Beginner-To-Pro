@@ -25,6 +25,9 @@ public class StringBasics {
         // count Digits
         countAll(str);
 
+        // printing each character from string on new line
+        printString(str);
+
         input.close();
     }
 
@@ -113,5 +116,13 @@ public class StringBasics {
         System.out.println("Total Digits = " + digits);
         System.out.println("Total letters = " + letters);
         System.out.println("Total Special Characters = " + specialChar);
+    }
+
+    public static void printString(String str)
+    {
+        System.out.println("Printing String each on new line: ");
+        for (int i = 0; i < str.length(); i++) {
+            System.out.println(str.charAt(i));
+        }
     }
 }
