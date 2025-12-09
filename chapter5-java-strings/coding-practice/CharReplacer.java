@@ -4,7 +4,7 @@ public class CharReplacer {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a string to reverse it: ");
+        System.out.print("Enter a string: ");
         String str = input.nextLine();
 
         if (str.isEmpty()) return;
@@ -15,7 +15,7 @@ public class CharReplacer {
         str = replaceSpace(str);
         // or could use str = str.replace(' ', '-');
 
-        System.out.print("New String = " + str);
+        System.out.print("New String with replaced ' ' to '-' = " + str);
 
         input.close();
     }
