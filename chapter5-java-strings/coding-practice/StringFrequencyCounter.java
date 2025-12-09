@@ -5,7 +5,7 @@ public class StringFrequencyCounter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter a string to reverse it: ");
+        System.out.print("Enter a string to count frequency of each character: ");
         String str = input.nextLine();
 
         if (str.isEmpty()) return;
