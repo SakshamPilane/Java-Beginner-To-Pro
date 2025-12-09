@@ -8,6 +8,8 @@ public class StringFrequencyCounter {
         System.out.print("Enter a string to reverse it: ");
         String str = input.nextLine();
 
+        if (str.isEmpty()) return;
+
         // get user input
         System.out.println("String entered = " + str);
 
