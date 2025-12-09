@@ -24,7 +24,7 @@ public class FirstNonRepeating {
 
     public static char findNR(String str)
     {
-        char[] charArray = str.toCharArray();
+        char[] charArray = str.toLowerCase().toCharArray();
         for (char value : charArray) {
             int count = 0;
             for (char item : charArray) {
