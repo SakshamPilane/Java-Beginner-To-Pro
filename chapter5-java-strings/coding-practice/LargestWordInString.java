@@ -11,48 +11,37 @@ public class LargestWordInString {
             System.out.print("No String Entered...EXITING");
             return;
         }
-
-        System.out.print("Largest String: " + findLargestWord(str));
     }
 
-    public static String findLargestWord(String str) {
-        char[] arr = str.toCharArray();
-
-        int maxLen = 0;
-        int maxStart = 0;
-
-        int currentLen = 0;
-        int currentStart = 0;
-
-        boolean inWord = false;
-
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] != ' ') {
-                if (!inWord) {
-                    inWord = true;
-                    currentStart = i;
-                    currentLen = 1;
-                } else {
-                    currentLen++;
+    public static void findLargestWord(String str)
+    {
+        char[] charArray = str.toCharArray();
+        int j = 0, diff, greaterLength = 0, start, end;
+        boolean isWord = false;
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] != ' ')
+            {
+                if (!isWord)
+                {
+                    j = i;
+                    isWord = true;
                 }
-            } else {
-                if (inWord) {
-                    if (currentLen > maxLen) {
-                        maxLen = currentLen;
-                        maxStart = currentStart;
-                    }
-                    inWord = false;
+            }
+            else
+            {
+                end = i
+                diff = i - j;
+                if (greaterLength < diff)
+                {
+                    greaterLength = diff;
                 }
+                isWord = false;
             }
         }
 
-        if (inWord && currentLen > maxLen) {
-            maxLen = currentLen;
-            maxStart = currentStart;
+        System.out.println("Longest String = ")
+        for (int i = start; i < end; i++) {
+            System.out.print(charArray[i]);
         }
-
-        return str.substring(maxStart, maxStart + maxLen);
     }
-
 }
