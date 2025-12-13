@@ -1,47 +1,53 @@
 import java.util.Scanner;
 
 public class LargestWordInString {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String str = input.nextLine();
 
-        if (str.isEmpty())
-        {
-            System.out.print("No String Entered...EXITING");
+        if (str.isEmpty()) {
+            System.out.println("No String Entered... EXITING");
             return;
         }
+
+        findLargestWord(str);
     }
 
-    public static void findLargestWord(String str)
-    {
-        char[] charArray = str.toCharArray();
-        int j = 0, diff, greaterLength = 0, start, end;
-        boolean isWord = false;
-        for (int i = 0; i < charArray.length; i++) {
-            if (charArray[i] != ' ')
+    public static void findLargestWord(String str) {
+        char[] arr = str.toCharArray();
+
+        int start = 0;
+        int maxStart = 0;
+        int maxLen = 0;
+        int currLen = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != ' ')
             {
-                if (!isWord)
-                {
-                    j = i;
-                    isWord = true;
-                }
+                currLen++;
             }
             else
             {
-                end = i
-                diff = i - j;
-                if (greaterLength < diff)
+                if (currLen > maxLen)
                 {
-                    greaterLength = diff;
+                    maxLen = currLen;
+                    maxStart = start;
                 }
-                isWord = false;
+                currLen = 0;
+                start = i + 1;
             }
         }
 
-        System.out.println("Longest String = ")
-        for (int i = start; i < end; i++) {
-            System.out.print(charArray[i]);
+        if (currLen > maxLen) {
+            maxLen = currLen;
+            maxStart = start;
+        }
+
+        System.out.print("Largest Word: ");
+        for (int i = maxStart; i < maxStart + maxLen; i++) {
+            System.out.print(arr[i]);
         }
     }
 }

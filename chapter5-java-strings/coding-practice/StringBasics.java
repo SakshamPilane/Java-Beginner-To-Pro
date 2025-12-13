@@ -64,7 +64,7 @@ public class StringBasics {
     public static int countChar(String str) {
         char[] charArray = str.toCharArray();
         int count = 0;
-        for (char _ : charArray) {
+        for (char ignored : charArray) {
             count++;
         }
         return count;

@@ -137,7 +137,7 @@ public class ArrayBasics {
     public static void countElements(int[] array)
     {
         int count = 0;
-        for (int _ : array) {
+        for (int ignored : array) {
             count++;
         }
         System.out.println("Total Number of elements in array = " + count);
