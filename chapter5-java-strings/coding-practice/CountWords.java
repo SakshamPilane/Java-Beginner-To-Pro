@@ -18,13 +18,12 @@ public class CountWords {
         input.close();
     }
 
-    public static int count(String str) {
-        char[] charArray = str.toCharArray();
+    public static int count(String str)
+    {
         int count = 0;
         boolean inWord = false;
-
-        for (char c : charArray) {
-            if (c != ' ')
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ')
             {
                 if (!inWord)
                 {
@@ -37,6 +36,7 @@ public class CountWords {
                 inWord = false;
             }
         }
+
         return count;
     }
 }
