@@ -14,39 +14,32 @@ public class SmallestWordInString {
         findSmallestWord(str);
     }
 
-    public static void findSmallestWord(String str) {
-        char[] arr = str.toCharArray();
-
-        int start = 0;
-        int minStart = 0;
-        int minLen = Integer.MAX_VALUE;
-        int currLen = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != ' ')
+    public static void findSmallestWord(String str)
+    {
+        int wordLength = Integer.MAX_VALUE, tempLength = 0, smallestWordFirstIndex, smallestWordLastIndex = 0;
+        for (int i = 0; i <= str.length(); i++)
+        {
+            if (i < str.length() && str.charAt(i) != ' ')
             {
-                currLen++;
+                tempLength++;
             }
             else
             {
-                if (currLen > 0 && currLen < minLen)
+                if (tempLength < wordLength)
                 {
-                    minLen = currLen;
-                    minStart = start;
+                    wordLength = tempLength;
+                    smallestWordLastIndex = i;
                 }
-                currLen = 0;
-                start = i + 1;
+                tempLength = 0;
             }
         }
 
-        if (currLen > 0 && currLen < minLen) {
-            minLen = currLen;
-            minStart = start;
-        }
+        smallestWordFirstIndex = smallestWordLastIndex - wordLength;
 
-        System.out.print("Smallest Word: ");
-        for (int i = minStart; i < minStart + minLen; i++) {
-            System.out.print(arr[i]);
+        System.out.println("Smallest Word Length = " + wordLength);
+        System.out.print("Smallest Word = ");
+        for (int i = smallestWordFirstIndex; i < smallestWordLastIndex; i++) {
+            System.out.print(str.charAt(i));
         }
     }
 }
