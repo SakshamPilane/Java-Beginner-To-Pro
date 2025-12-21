@@ -15,33 +15,40 @@ public class WordCharacterReversal {
         reverseEachWord(str);
     }
 
-    public static void reverseEachWord(String str) {
+    public static void reverseEachWord(String str)
+    {
+        int startIndex = 0, lastIndex;
+        boolean inWord = false;
         char[] arr = str.toCharArray();
-
-        int start = 0;     // start index of word
-
         for (int i = 0; i <= arr.length; i++) {
-
-            // word ends on space or end of string
-            if (i == arr.length || arr[i] == ' ') {
-
-                int left = start;
-                int right = i - 1;
-
-                // reverse current word
-                while (left < right) {
-                    char temp = arr[left];
-                    arr[left] = arr[right];
-                    arr[right] = temp;
-                    left++;
-                    right--;
+            if (i < arr.length && arr[i] != ' ')
+            {
+                if (!inWord)
+                {
+                    inWord = true;
+                    startIndex = i;
                 }
-
-                start = i + 1; // move to next word
+            }
+            else
+            {
+                lastIndex = i - 1;
+                inWord = false;
+                reverseWord(arr, startIndex, lastIndex);
             }
         }
 
-        System.out.print("Reversed Word String = ");
-        System.out.println(arr);
+        System.out.print("Word Reversal String = ");
+        for (char c : arr) {
+            System.out.print(c);
+        }
+    }
+
+    public static void reverseWord(char[] arr, int startIndex, int lastIndex)
+    {
+        for (int i = startIndex, j = lastIndex; i < j; i++, j--) {
+            char c = arr[i];
+            arr[i] = arr[j];
+            arr[j] = c;
+        }
     }
 }
