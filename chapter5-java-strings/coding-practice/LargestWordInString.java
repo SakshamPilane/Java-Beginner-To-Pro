@@ -15,39 +15,32 @@ public class LargestWordInString {
         findLargestWord(str);
     }
 
-    public static void findLargestWord(String str) {
-        char[] arr = str.toCharArray();
-
-        int start = 0;
-        int maxStart = 0;
-        int maxLen = 0;
-        int currLen = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != ' ')
+    public static void findLargestWord(String str)
+    {
+        int wordLength = 0, tempLength = 0, largestWordFirstIndex, largestWordLastIndex = 0;
+        for (int i = 0; i <= str.length(); i++)
+        {
+            if (i < str.length() && str.charAt(i) != ' ')
             {
-                currLen++;
+                tempLength++;
             }
             else
             {
-                if (currLen > maxLen)
+                if (tempLength > wordLength)
                 {
-                    maxLen = currLen;
-                    maxStart = start;
+                    wordLength = tempLength;
+                    largestWordLastIndex = i;
                 }
-                currLen = 0;
-                start = i + 1;
+                tempLength = 0;
             }
         }
 
-        if (currLen > maxLen) {
-            maxLen = currLen;
-            maxStart = start;
-        }
+        largestWordFirstIndex = largestWordLastIndex - wordLength;
 
-        System.out.print("Largest Word: ");
-        for (int i = maxStart; i < maxStart + maxLen; i++) {
-            System.out.print(arr[i]);
+        System.out.println("Largest Word Length = " + wordLength);
+        System.out.print("Largest Word = ");
+        for (int i = largestWordFirstIndex; i < largestWordLastIndex; i++) {
+            System.out.print(str.charAt(i));
         }
     }
 }
