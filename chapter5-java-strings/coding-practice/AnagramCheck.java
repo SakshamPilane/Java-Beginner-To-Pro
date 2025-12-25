@@ -19,7 +19,7 @@ public class AnagramCheck {
 
         input.close();
     }
-
+    
     public static boolean isAnagram(String s1, String s2) {
 
         if (s1.length() != s2.length())
