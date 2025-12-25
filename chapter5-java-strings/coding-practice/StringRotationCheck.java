@@ -1,45 +1,40 @@
 import java.util.Scanner;
 
 public class StringRotationCheck {
-
-    public static boolean isRotation(String s1, String s2) {
-        if (s1.length() != s2.length())
-            return false;
-
-        String temp = s1 + s1;
-        return isSubstring(temp, s2);
-    }
-
-    // Manual substring check
-    public static boolean isSubstring(String text, String pattern) {
-        for (int i = 0; i <= text.length() - pattern.length(); i++) {
-            int j;
-            for (j = 0; j < pattern.length(); j++) {
-                if (text.charAt(i + j) != pattern.charAt(j))
-                    break;
-            }
-            if (j == pattern.length())
-                return true;
-        }
-        return false;
-    }
-
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter first string: ");
+        System.out.println("Enter first string = ");
         String str1 = input.nextLine();
 
-        System.out.print("Enter second string: ");
+        if (str1.isEmpty())
+        {
+            System.out.println("First String is Empty....Exiting....!");
+            input.close();
+            return;
+        }
+
+        System.out.println("Enter second string = ");
         String str2 = input.nextLine();
 
-        // get user input
-        System.out.println("First String entered = " + str1);
-        System.out.println("Second String entered = " + str2);
-
-        if (isRotation(str1, str2))
+        if (str2.isEmpty())
         {
-            System.out.println("Is A Rotation!");
+            System.out.println("Second String is Empty....Exiting....!");
+            input.close();
+            return;
+        }
+
+        if (str1.length() != str2.length())
+        {
+            System.out.println("String Lengths are different.... Exiting...!");
+            input.close();
+            return;
+        }
+
+        if (checkSubString(str1.concat(str1), str2))
+        {
+            System.out.println("Is a Rotation!");
         }
         else
         {
@@ -47,5 +42,23 @@ public class StringRotationCheck {
         }
 
         input.close();
+    }
+
+    public static boolean checkSubString(String temp, String str2)
+    {
+        for (int i = 0; i <= temp.length() - str2.length(); i++) {
+            int j;
+            for (j = 0; j < str2.length(); j++) {
+                if (temp.charAt(i+j) != str2.charAt(j))
+                {
+                    break;
+                }
+            }
+            if (j == str2.length())
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
