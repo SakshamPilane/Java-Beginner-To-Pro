@@ -26,8 +26,7 @@ public class UserDefinedFunctions {
             System.out.println("4. Exit!");
             System.out.println("***************************************");
             System.out.println("Enter a choice: ");
-            int choice = input.nextInt();
-            input.nextLine();
+            int choice = Integer.parseInt(input.nextLine());
             switch (choice)
             {
                 case 1:
