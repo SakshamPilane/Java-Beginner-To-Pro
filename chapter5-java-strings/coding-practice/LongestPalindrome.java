@@ -5,7 +5,7 @@ public class LongestPalindrome {
     {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter a string: ");
+        System.out.print("Enter a string: ");
         String str = input.nextLine();
 
         if (str.isEmpty()) {
@@ -20,37 +20,38 @@ public class LongestPalindrome {
 
     public static String findLongestPalindrome(String str) {
 
-        int start = 0, maxLength = 1;
-        int n = str.length();
+        int start = 0, maxLen = 1;
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < str.length(); i++) {
 
-            // Odd length palindromes
+            // Odd-length palindromes
             int left = i, right = i;
-            while (left >= 0 && right < n && str.charAt(left) == str.charAt(right)) {
+            while (left >= 0 && right < str.length() && str.charAt(left) == str.charAt(right)) {
+
                 int len = right - left + 1;
-                if (len > maxLength) {
+                if (len > maxLen) {
                     start = left;
-                    maxLength = len;
+                    maxLen = len;
                 }
                 left--;
                 right++;
             }
 
-            // Even length palindromes
+            // Even-length palindromes
             left = i;
             right = i + 1;
-            while (left >= 0 && right < n && str.charAt(left) == str.charAt(right)) {
+            while (left >= 0 && right < str.length() && str.charAt(left) == str.charAt(right)) {
+
                 int len = right - left + 1;
-                if (len > maxLength) {
+                if (len > maxLen) {
                     start = left;
-                    maxLength = len;
+                    maxLen = len;
                 }
                 left--;
                 right++;
             }
         }
 
-        return str.substring(start, start + maxLength);
+        return str.substring(start, start + maxLen);
     }
 }
