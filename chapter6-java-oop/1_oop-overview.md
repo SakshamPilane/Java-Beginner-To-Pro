@@ -20,12 +20,12 @@ Each object:
 
 ## 🌍 Real-World Analogy
 
-| Real World | OOP Representation |
+| Real World | OOP Representation|
 |----------|-------------------|
-| Student | Class |
-| Name, Age, Marks | Variables |
-| Study(), Exam() | Methods |
-| Individual student | Object |
+| Student | Class             |
+| Name, Age, Marks | Variables         |
+| Study(), Exam() | Methods           |
+| Individual student | Object            |
 
 ---
 
