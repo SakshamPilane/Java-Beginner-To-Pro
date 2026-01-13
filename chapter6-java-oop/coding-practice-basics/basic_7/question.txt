@@ -1,0 +1,1 @@
+Create a class with a method reverseNumber(int n) and call it from main.
