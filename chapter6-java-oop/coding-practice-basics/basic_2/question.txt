@@ -1,0 +1,1 @@
+Create a class Car with methods start(), stop(). Call them using an object.

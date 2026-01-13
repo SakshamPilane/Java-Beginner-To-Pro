@@ -1,0 +1,1 @@
+Create a class Student with attributes name, age, and marks. Create object and print values.
