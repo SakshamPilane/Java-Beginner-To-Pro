@@ -1,0 +1,6 @@
+Create a class MathOps and overload method multiply()
+    * multiply(int, int)
+    * multiply(double, double)
+    * multiply(int, double, int)
+
+Remember Method Overloading is Static Polymorphism

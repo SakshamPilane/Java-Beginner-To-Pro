@@ -1,0 +1,1 @@
+Create a class Counter with a static variable count that tracks the number of objects created.

@@ -1,0 +1,1 @@
+Write a program to show that static methods can be called without creating objects.

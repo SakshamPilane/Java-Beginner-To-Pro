@@ -1,0 +1,2 @@
+Create a class Box with width, height, depth; calculate volume.
+Use both default and parameterized constructors.
