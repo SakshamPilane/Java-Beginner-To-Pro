@@ -1,0 +1,2 @@
+Create a class Shape with method area().
+Create subclasses: Rectangle, Circle, Triangle that override area().
