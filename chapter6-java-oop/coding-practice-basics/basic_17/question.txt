@@ -1,0 +1,1 @@
+Create a class Student with private variables and provide getters/setters (encapsulation).
