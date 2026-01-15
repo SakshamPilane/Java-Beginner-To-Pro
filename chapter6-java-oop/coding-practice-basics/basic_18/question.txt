@@ -1,2 +1,8 @@
 Create a class Shape with method area().
 Create subclasses: Rectangle, Circle, Triangle that override area().
+
+Remember Method Overriding requires:
+Same method name
+Same parameter list
+Same return type (or covariant)
+Inheritance
