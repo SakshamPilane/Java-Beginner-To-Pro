@@ -1,0 +1,1 @@
+Create a class Vehicle with properties, extend in Car, Bike classes.
