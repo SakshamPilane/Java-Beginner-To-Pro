@@ -1,0 +1,3 @@
+Demonstrate runtime polymorphism using references:
+Shape s = new Circle();
+s.area();
