@@ -132,7 +132,7 @@ class Circle extends Shape {
 
 Abstraction works with inheritance and polymorphism:
 
-```java
+```text
 Shape s = new Circle();
 s.area();  // Circle's implementation runs
 ```
