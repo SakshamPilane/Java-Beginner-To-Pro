@@ -1,0 +1,5 @@
+Implement a small banking system using OOP concepts:
+   * Account
+   * SavingsAccount
+   * CurrentAccount
+   * methods: deposit, withdraw, showBalance
