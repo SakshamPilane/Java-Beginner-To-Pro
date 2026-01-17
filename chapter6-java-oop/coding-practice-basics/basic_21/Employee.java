@@ -6,4 +6,8 @@ public class Employee extends Person{
         super();
         System.out.println("Employee Class Constructor.");
     }
+    public void display()
+    {
+        System.out.println("Chaining completed.");
+    }
 }
