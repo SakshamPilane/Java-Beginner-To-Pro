@@ -1,0 +1,1 @@
+Create an abstract class MobilePhone with abstract method features(). Implement in Android and iPhone.
