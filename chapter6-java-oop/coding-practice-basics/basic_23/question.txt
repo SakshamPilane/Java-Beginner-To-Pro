@@ -1,0 +1,1 @@
+Create an interface Playable with method play(). Implement in Radio, Guitar, VideoPlayer.
