@@ -1,0 +1,4 @@
+Design a Library system:
+   * Book (title, author)
+   * Library (addBook, removeBook, searchBook)
+   * Student (borrowBook, returnBook)
