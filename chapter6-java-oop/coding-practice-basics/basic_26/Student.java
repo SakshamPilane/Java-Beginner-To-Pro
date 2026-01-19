@@ -1,32 +1,44 @@
 package basic_26;
 
+import java.util.Scanner;
+
 public class Student {
 
-    private final String name;
     private Book borrowedBook;
 
-    public Student(String name) {
-        this.name = name;
+    public String getLibLoginUserName() {
+        return "Student1234";
     }
 
-    public void borrowBook(Library library, String title) {
-        Book book = library.searchBook(title);
-        if (book != null) {
-            borrowedBook = book;
-            library.removeBook(title);
-            System.out.println(name + " borrowed " + title);
-        } else {
-            System.out.println("Book not available");
+    public String getLibLoginPwd() {
+        return "User1234";
+    }
+
+    public void borrowBook(Library library, Scanner input) {
+        library.viewBooks();
+
+        System.out.print("Enter book title to borrow: ");
+        String title = input.nextLine();
+
+        Book book = library.getBook(title);
+        if (book == null) {
+            System.out.println("Book not available!");
+            return;
         }
+
+        borrowedBook = book;
+        library.removeBook(title);
+        System.out.println("Book borrowed successfully.");
     }
 
     public void returnBook(Library library) {
-        if (borrowedBook != null) {
-            library.addBook(borrowedBook);
-            System.out.println(name + " returned " + borrowedBook.getTitle());
-            borrowedBook = null;
-        } else {
-            System.out.println("No book to return");
+        if (borrowedBook == null) {
+            System.out.println("No book to return.");
+            return;
         }
+
+        library.addBook(borrowedBook);
+        System.out.println("Book returned successfully.");
+        borrowedBook = null;
     }
 }
