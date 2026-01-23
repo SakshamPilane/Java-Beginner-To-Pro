@@ -1,0 +1,4 @@
+Implement a polymorphic Logger:
+   * ConsoleLogger
+   * FileLogger
+   * Each overrides log()
