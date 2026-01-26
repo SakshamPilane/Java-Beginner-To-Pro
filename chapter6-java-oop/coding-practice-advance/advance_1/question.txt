@@ -1,0 +1,1 @@
+Create a base class Animal and a derived class Dog. Show calling parent class method.
