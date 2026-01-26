@@ -1,0 +1,1 @@
+Create a class Vehicle with model & speed. Extend it into Car and print details.
