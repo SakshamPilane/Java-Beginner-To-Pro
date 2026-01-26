@@ -1,0 +1,4 @@
+Demonstrate composition (has-a relationship):
+Car has-a Engine
+Human has-a Heart
+Computer has-a CPU
