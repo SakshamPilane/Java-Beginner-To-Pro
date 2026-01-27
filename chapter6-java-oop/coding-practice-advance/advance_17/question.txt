@@ -1,0 +1,3 @@
+Create an interface Vehicle with method start().
+Create two classes Car and Bike implementing it.
+Create an array of Vehicle types and start each one.
