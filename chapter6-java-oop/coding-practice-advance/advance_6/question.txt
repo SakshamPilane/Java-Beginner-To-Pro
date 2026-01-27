@@ -1,0 +1,2 @@
+Create a Parent class with method printMessage().
+Override it in Child class and call both versions.
