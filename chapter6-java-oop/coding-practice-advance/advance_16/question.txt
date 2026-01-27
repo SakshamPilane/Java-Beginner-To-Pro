@@ -1,0 +1,5 @@
+Create multiple interfaces and a class implementing both.
+Example:
+   * Walkable
+   * Runnable
+   * Class: Human implements both
