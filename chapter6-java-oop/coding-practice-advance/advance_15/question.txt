@@ -1,0 +1,2 @@
+Create an interface Printable and a class Book implementing it.
+Add printDetails() method.
