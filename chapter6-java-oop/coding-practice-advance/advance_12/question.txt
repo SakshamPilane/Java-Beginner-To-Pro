@@ -1,0 +1,2 @@
+Create an abstract class Shape with abstract method area().
+Implement in Triangle, Circle, Rectangle.
