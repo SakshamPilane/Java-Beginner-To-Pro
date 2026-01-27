@@ -1,0 +1,2 @@
+Create a class Employee with display().
+In subclass Manager, override display() and call superclass display() using super.
