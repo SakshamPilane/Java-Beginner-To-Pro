@@ -1,0 +1,2 @@
+Create three-level inheritance: Grandparent → Parent → Child.
+Each class should have a function to print something.
