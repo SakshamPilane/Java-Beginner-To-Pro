@@ -1,0 +1,3 @@
+Create a polymorphic reference array:
+Example: Animal[] pets = {new Cat(), new Dog(), new Cow()};
+Call sound() on each.
