@@ -1,0 +1,2 @@
+Create an abstract class Bank with abstract method getInterestRate().
+Implement in SBI, HDFC, ICICI.
