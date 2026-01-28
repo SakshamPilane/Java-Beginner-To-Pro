@@ -1,0 +1,4 @@
+Design a mini Library System using inheritance:
+   * Base: Item
+   * Child: Book, Magazine, DVD
+   * displayDetails() overridden
