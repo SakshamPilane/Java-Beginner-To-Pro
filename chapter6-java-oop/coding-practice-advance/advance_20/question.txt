@@ -1,0 +1,4 @@
+Create a Polymorphic Notification System:
+   * Base: Notification
+   * Child: EmailNotification, SMSNotification, PushNotification
+   * send() overridden
