@@ -1,0 +1,4 @@
+Design a Payment System using interfaces:
+   * PaymentMethod (interface)
+   * Classes: CreditCard, DebitCard, UPI, Cash
+   * processPayment() method
