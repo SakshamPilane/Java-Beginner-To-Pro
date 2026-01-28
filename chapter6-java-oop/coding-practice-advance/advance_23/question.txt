@@ -1,0 +1,3 @@
+Demonstrate HAS-A relationship (composition):
+   * Car has-a Engine
+   * House has-a Door
