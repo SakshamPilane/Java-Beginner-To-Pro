@@ -1,0 +1,4 @@
+Create an Inventory Management OOP System:
+   * Product class
+   * Inventory class (addProduct, removeProduct, searchProduct)
+   * Without using Collections (use arrays)
