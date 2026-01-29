@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/chapter5-java-strings/coding-practice" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter6-java-oop/coding-practice-basics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter6-java-oop/coding-practice-advance" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter7-java-exception-handling/coding-practice" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src" />
     </content>
     <orderEntry type="jdk" jdkName="homebrew-21 (2)" jdkType="JavaSDK" />
