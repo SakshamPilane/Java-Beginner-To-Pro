@@ -1,0 +1,1 @@
+Write a program to handle multiple exceptions using multi-catch block.
