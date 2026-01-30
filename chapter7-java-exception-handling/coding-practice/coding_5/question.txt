@@ -1,0 +1,1 @@
+Demonstrate a simple try-catch-finally block. Show that finally always executes.
