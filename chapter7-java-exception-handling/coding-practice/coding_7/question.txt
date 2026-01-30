@@ -1,0 +1,1 @@
+Write a program that handles NullPointerException when accessing methods of a null reference.
