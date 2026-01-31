@@ -1,0 +1,1 @@
+Write a method that declares throws Exception and handle it inside main.
