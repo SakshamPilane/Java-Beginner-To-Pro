@@ -1,0 +1,1 @@
+Demonstrate re-throwing an exception (catch → throw again).
