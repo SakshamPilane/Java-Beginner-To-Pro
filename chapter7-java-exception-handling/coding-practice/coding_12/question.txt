@@ -1,0 +1,1 @@
+Simulate login validation: if username or password is empty, throw custom exception.
