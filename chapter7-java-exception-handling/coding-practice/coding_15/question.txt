@@ -1,0 +1,4 @@
+Simulate a simple ATM program that handles:
+   * Invalid PIN
+   * Invalid amount
+   * Insufficient balance
