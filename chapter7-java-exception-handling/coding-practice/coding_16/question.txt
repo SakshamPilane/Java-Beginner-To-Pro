@@ -1,0 +1,3 @@
+Create your own Exception hierarchy:
+   * Base: AppException
+   * Child: InputException, ValidationException, DatabaseException
