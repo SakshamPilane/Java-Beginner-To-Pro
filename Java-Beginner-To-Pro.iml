@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/chapter6-java-oop/coding-practice-basics" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter6-java-oop/coding-practice-advance" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter7-java-exception-handling/coding-practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/chapter10-java-collection-frameworks/coding-practice" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter9-java-wrapper-class/coding-practice" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src" />
     </content>
