@@ -1,4 +1,4 @@
-package coding_8;
+package pattern_8;
 
 import java.util.Scanner;
 public class Pattern_8_HalfDiamond {

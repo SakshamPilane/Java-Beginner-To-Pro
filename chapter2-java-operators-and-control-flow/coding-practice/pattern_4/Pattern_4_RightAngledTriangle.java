@@ -1,15 +1,15 @@
-package coding_1;
+package pattern_4;
 
 import java.util.Scanner;
-public class Pattern_1_Square {
+public class Pattern_4_RightAngledTriangle {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Size for drawing square pattern: ");
+        System.out.print("Enter Size for drawing right angled triangle pattern: ");
         int n = input.nextInt(), i, j;
         for ( i = 0; i < n; i++ )
         {
-            for ( j = 0; j < n; j++ )
+            for ( j = 0; j <= i; j++ )
             {
                 System.out.print("* ");
             }

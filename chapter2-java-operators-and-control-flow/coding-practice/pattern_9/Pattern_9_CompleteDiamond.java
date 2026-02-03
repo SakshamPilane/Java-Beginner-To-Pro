@@ -1,12 +1,12 @@
-package coding_10;
+package pattern_9;
 
 import java.util.Scanner;
 
-public class Pattern_10_HollowDiamond {
+public class Pattern_9_CompleteDiamond {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Size for drawing Complete hollow Diamond pattern: ");
+        System.out.print("Enter Size for drawing Complete Diamond pattern: ");
         int n = input.nextInt(), i, j;
         for ( i = 0; i < n; i++ )
         {
@@ -18,13 +18,7 @@ public class Pattern_10_HollowDiamond {
             }
             for ( j = 0; j <= i; j++ )
             {
-                if (j==i||j==0)
-                {
-                    System.out.print("* ");
-                }
-                else {
-                    System.out.print("  ");
-                }
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
@@ -38,13 +32,7 @@ public class Pattern_10_HollowDiamond {
             }
             for ( j = n-2; j >= i; j-- )
             {
-                if (j == n-2 || j == i)
-                {
-                    System.out.print("* ");
-                }
-                else {
-                    System.out.print("  ");
-                }
+                System.out.print("* ");
             }
             System.out.print("\n");
         }

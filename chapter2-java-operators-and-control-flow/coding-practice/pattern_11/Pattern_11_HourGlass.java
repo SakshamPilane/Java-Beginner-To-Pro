@@ -1,7 +1,8 @@
-package coding_12;
+package pattern_11;
 
 import java.util.Scanner;
-public class Pattern_12_HollowHourGlass {
+
+public class Pattern_11_HourGlass {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -18,13 +19,7 @@ public class Pattern_12_HollowHourGlass {
             }
             for (j = n-1; j >= i; j--)
             {
-                if(j==n-1||i==j||i==0)
-                {
-                    System.out.print("* ");
-                }
-                else{
-                    System.out.print("  ");
-                }
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
@@ -39,13 +34,7 @@ public class Pattern_12_HollowHourGlass {
             }
             for (j = 0; j <= i; j++)
             {
-                if(j==0||i==j||i==n-1)
-                {
-                    System.out.print("* ");
-                }
-                else{
-                    System.out.print("  ");
-                }
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
