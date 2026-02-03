@@ -1,3 +1,5 @@
+package coding_5;
+
 import java.util.Scanner;
 public class Pattern_5_Pyramid {
     public static void main(String[] args)

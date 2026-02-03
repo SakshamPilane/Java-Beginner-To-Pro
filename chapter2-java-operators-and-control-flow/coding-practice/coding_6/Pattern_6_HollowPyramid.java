@@ -1,3 +1,5 @@
+package coding_6;
+
 import java.util.Scanner;
 public class Pattern_6_HollowPyramid {
     public static void main(String[] args)

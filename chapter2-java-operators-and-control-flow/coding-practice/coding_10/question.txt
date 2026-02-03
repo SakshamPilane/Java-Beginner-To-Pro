@@ -1,0 +1,1 @@
+Display a complete hollow diamond pattern using symbol '*'

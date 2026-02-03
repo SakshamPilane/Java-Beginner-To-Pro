@@ -1,0 +1,1 @@
+Display a pyramid pattern using symbol '*'

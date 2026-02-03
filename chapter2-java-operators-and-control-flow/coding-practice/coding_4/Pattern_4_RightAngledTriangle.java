@@ -1,3 +1,5 @@
+package coding_4;
+
 import java.util.Scanner;
 public class Pattern_4_RightAngledTriangle {
     public static void main(String[] args)

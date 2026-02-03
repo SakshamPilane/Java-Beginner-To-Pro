@@ -1,19 +1,14 @@
-import java.util.Scanner;
+package coding_8;
 
-public class Pattern_9_CompleteDiamond {
+import java.util.Scanner;
+public class Pattern_8_HalfDiamond {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Size for drawing Complete Diamond pattern: ");
+        System.out.print("Enter Size for drawing Half Diamond pattern: ");
         int n = input.nextInt(), i, j;
         for ( i = 0; i < n; i++ )
         {
-            int k = n-1;
-            while (k>i)
-            {
-                System.out.print(" ");
-                k--;
-            }
             for ( j = 0; j <= i; j++ )
             {
                 System.out.print("* ");
@@ -22,12 +17,6 @@ public class Pattern_9_CompleteDiamond {
         }
         for ( i = 0; i < n; i++ )
         {
-            int k = 0;
-            while (k<=i)
-            {
-                System.out.print(" ");
-                k++;
-            }
             for ( j = n-2; j >= i; j-- )
             {
                 System.out.print("* ");

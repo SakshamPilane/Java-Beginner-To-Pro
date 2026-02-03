@@ -1,3 +1,5 @@
+package coding_7;
+
 import java.util.Scanner;
 public class Pattern_7_InvertedPyramid {
     public static void main(String[] args)

@@ -1,0 +1,1 @@
+Display a right angled triangle pattern using symbol '*'
