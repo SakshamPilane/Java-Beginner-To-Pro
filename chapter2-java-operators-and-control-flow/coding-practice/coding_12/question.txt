@@ -1,0 +1,1 @@
+Display a hollow hour glass pattern using symbol '*'

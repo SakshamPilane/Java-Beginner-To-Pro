@@ -1,1 +1,1 @@
-Display a inverted pyramid pattern using symbol '*'
+Display an inverted pyramid pattern using symbol '*'

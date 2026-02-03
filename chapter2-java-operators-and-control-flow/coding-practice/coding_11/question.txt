@@ -1,0 +1,1 @@
+Display an hour glass pattern using symbol '*'

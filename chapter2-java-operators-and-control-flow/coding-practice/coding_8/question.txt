@@ -1,1 +1,1 @@
-Display a half left or right diamond pattern using symbol '*'
+Display a half left or half right diamond pattern using symbol '*'
