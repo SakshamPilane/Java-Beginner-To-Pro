@@ -1,3 +1,5 @@
+package coding_1;
+
 import java.util.Scanner;
 public class Pattern_1_Square {
     public static void main(String[] args)

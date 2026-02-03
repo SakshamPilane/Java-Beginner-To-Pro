@@ -1,3 +1,5 @@
+package coding_3;
+
 import java.util.Scanner;
 public class Pattern_3_Rhombus {
     public static void main(String[] args)

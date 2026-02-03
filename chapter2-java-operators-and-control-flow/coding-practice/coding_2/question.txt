@@ -1,0 +1,1 @@
+Display a hollow square pattern using symbol '*'
