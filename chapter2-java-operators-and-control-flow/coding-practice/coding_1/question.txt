@@ -1,0 +1,1 @@
+Input an integer and print its absolute value using if.
