@@ -1,5 +1,7 @@
+package coding_16;
+
 import java.util.Scanner;
-public class ReverseANumber {
+class ReverseANumber {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

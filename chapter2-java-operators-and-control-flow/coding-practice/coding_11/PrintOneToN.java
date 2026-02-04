@@ -1,5 +1,7 @@
+package coding_11;
+
 import java.util.Scanner;
-public class PrintOneToN {
+class PrintOneToN {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

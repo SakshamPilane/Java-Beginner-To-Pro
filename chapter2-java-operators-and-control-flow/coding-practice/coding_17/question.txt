@@ -1,0 +1,1 @@
+Input a number and check whether it is a palindrome (same forward and backward).

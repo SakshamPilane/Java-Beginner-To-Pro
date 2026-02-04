@@ -1,5 +1,7 @@
+package coding_13;
+
 import java.util.Scanner;
-public class SumOfNaturalNumbers {
+class SumOfNaturalNumbers {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

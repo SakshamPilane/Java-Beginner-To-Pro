@@ -1,5 +1,7 @@
+package coding_17;
+
 import java.util.Scanner;
-public class PalindromeChecker {
+class PalindromeChecker {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

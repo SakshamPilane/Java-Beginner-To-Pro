@@ -1,0 +1,1 @@
+Input a number and count how many digits it has using a while loop.

@@ -1,5 +1,7 @@
+package coding_15;
+
 import java.util.Scanner;
-public class MultiplicationTableCreation {
+class MultiplicationTableCreation {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

@@ -1,5 +1,7 @@
+package coding_14;
+
 import java.util.Scanner;
-public class FactorialOfNumbers {
+class FactorialOfNumbers {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

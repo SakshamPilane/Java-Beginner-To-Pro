@@ -1,0 +1,1 @@
+Input a number N and print numbers from 1 to N using a for loop.

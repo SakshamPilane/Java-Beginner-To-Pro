@@ -1,0 +1,1 @@
+Input a number and print its multiplication table using a for loop.

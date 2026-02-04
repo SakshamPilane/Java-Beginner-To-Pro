@@ -1,0 +1,1 @@
+Use a while loop to print all even numbers between 1 and 100.
