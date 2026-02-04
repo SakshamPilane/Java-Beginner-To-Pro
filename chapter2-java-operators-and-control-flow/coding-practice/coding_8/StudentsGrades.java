@@ -1,5 +1,7 @@
+package coding_8;
+
 import java.util.Scanner;
-public class StudentsGrades {
+class StudentsGrades {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

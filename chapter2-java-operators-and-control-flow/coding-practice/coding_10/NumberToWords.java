@@ -1,5 +1,7 @@
+package coding_10;
+
 import java.util.Scanner;
-public class NumberToWords {
+class NumberToWords {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

@@ -1,5 +1,7 @@
+package coding_6;
+
 import java.util.Scanner;
-public class LargestNumberAmongThree {
+class LargestNumberAmongThree {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

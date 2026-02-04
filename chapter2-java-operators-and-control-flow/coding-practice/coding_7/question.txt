@@ -1,0 +1,2 @@
+Use a switch-case to create a calculator that performs:
+addition, subtraction, multiplication, or division based on user input.

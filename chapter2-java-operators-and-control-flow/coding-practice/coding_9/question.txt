@@ -1,0 +1,2 @@
+Input a year and check if it is a leap year or not.
+(Hint: divisible by 4, not divisible by 100 unless divisible by 400)
