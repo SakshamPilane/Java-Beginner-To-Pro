@@ -1,7 +1,7 @@
 package coding_1;
 
 import java.util.Scanner;
-public class AbsoluteValueFinder {
+class AbsoluteValueFinder {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

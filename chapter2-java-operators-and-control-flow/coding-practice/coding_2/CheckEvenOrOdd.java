@@ -1,7 +1,7 @@
 package coding_2;
 
 import java.util.Scanner;
-public class CheckEvenOrOdd {
+class CheckEvenOrOdd {
     public static void main(String[] args)
     {
         // can also be done using ternary operators

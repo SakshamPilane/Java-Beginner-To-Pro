@@ -1,0 +1,1 @@
+Input a character and check if it is a vowel (a, e, i, o, u) or a consonant using switch-case.

@@ -1,5 +1,7 @@
+package coding_4;
+
 import java.io.*;
-public class CheckVowels {
+class CheckVowels {
     public static void main(String[] args) throws IOException
     {
         BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));

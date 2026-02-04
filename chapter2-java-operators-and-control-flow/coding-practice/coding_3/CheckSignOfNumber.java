@@ -1,7 +1,7 @@
 package coding_3;
 
 import java.util.Scanner;
-public class CheckSignOfNumber {
+class CheckSignOfNumber {
     public static void main(String[] args)
     {
         // In this program we will check sign's of a number whether it is negative or positive or zero
