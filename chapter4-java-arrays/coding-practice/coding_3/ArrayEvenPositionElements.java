@@ -1,6 +1,8 @@
+package coding_3;
+
 import java.util.Scanner;
 
-public class ArrayEvenPositionElements {
+class ArrayEvenPositionElements {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

@@ -1,0 +1,1 @@
+Copy all elements of one array into another array.

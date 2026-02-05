@@ -1,6 +1,8 @@
+package coding_4;
+
 import java.util.Scanner;
 
-public class SignCounter {
+class SignCounter {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

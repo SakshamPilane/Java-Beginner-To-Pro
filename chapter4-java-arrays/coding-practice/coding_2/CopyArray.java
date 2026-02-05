@@ -1,6 +1,8 @@
+package coding_2;
+
 import java.util.Scanner;
 
-public class CopyArray {
+class CopyArray {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

@@ -1,0 +1,8 @@
+1. Create an array of size 5 and store any 5 numbers inside it. Print all the elements.
+2. Take N from the user, create an array of size N, input all elements, and print them.
+3. Print the array in reverse order.
+4. Find the sum of all elements in an array.
+5. Find the maximum element in an array.
+6. Find the minimum element in an array.
+7. Count how many even numbers are present in an array.
+8. Search for an element in an array (Linear Search).
