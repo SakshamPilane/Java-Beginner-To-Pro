@@ -1,7 +1,9 @@
+package coding_8;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class FreqCounter {
+class FreqCounter {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
