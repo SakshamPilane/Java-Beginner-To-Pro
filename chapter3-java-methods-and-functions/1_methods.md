@@ -1,4 +1,4 @@
-# 🧩 Java Methods – Basics
+# 🧩 Java Methods
 
 A **method** in Java is a **collection of statements** grouped together to perform a specific task.  
 It improves **readability, modularity, and reusability** of code.
