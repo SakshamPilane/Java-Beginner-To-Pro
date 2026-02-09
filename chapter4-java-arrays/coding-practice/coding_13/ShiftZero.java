@@ -1,3 +1,5 @@
+package coding_13;
+
 import java.util.Scanner;
 
 public class ShiftZero {
@@ -36,17 +38,15 @@ public class ShiftZero {
 
     public static void shiftZero(int[] array)
     {
-        int index = 0;
-        for (int num : array) {
-            if (num != 0)
-            {
-                array[index++] = num;
-            }
-        }
-
-        while (index < array.length)
+        int j = 0;
+        for (int i = 0; i < array.length; i++)
         {
-            array[index++] = 0;
+            if (array[i] != 0) {
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+                j++;
+            }
         }
     }
 }
