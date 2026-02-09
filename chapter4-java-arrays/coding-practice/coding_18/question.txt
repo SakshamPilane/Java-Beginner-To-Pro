@@ -1,0 +1,2 @@
+Find the missing number from an array of 1 to N
+Example: {1,2,4,5} → missing 3
