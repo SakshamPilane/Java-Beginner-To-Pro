@@ -1,3 +1,5 @@
+package coding_12;
+
 import java.util.Scanner;
 
 public class RotateArray {
