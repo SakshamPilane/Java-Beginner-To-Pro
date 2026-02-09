@@ -1,0 +1,2 @@
+Rotate array to the left by 1 position.
+Example: [1,2,3,4] → [2,3,4,1]

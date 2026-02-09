@@ -1,7 +1,9 @@
+package coding_10;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MergeArrays {
+class MergeArrays {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
