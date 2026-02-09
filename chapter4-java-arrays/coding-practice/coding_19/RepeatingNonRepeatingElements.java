@@ -1,7 +1,9 @@
+package coding_19;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RepeatingNonRepeatingElements {
+class RepeatingNonRepeatingElements {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

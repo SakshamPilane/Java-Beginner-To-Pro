@@ -2,7 +2,7 @@ package coding_12;
 
 import java.util.*;
 
-public class RightShiftingArray {
+class RightShiftingArray {
 
     public static void main(String[] args) {
 

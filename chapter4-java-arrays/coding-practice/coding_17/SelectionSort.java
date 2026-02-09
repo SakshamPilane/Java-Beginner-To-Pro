@@ -2,7 +2,7 @@ package coding_17;
 
 import java.util.Scanner;
 
-public class SelectionSort {
+class SelectionSort {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

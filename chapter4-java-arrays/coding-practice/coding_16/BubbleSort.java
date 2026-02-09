@@ -2,7 +2,7 @@ package coding_16;
 
 import java.util.Scanner;
 
-public class BubbleSort {
+class BubbleSort {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

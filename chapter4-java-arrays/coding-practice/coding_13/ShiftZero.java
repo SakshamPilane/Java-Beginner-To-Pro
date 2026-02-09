@@ -2,7 +2,7 @@ package coding_13;
 
 import java.util.Scanner;
 
-public class ShiftZero {
+class ShiftZero {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
