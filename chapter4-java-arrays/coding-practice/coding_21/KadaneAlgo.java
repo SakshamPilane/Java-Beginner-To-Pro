@@ -1,3 +1,5 @@
+package coding_21;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
