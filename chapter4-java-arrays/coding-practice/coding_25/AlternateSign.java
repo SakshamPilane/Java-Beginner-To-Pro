@@ -1,3 +1,5 @@
+package coding_25;
+
 import java.util.Scanner;
 
 public class AlternateSign {
