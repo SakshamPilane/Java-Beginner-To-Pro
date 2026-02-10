@@ -1,3 +1,5 @@
+package coding_24;
+
 import java.util.Scanner;
 
 public class LongestContiguousSubarray {
