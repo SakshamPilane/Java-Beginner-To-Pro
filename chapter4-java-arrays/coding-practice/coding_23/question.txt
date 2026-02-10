@@ -1,0 +1,1 @@
+Print all subarrays of a given array.

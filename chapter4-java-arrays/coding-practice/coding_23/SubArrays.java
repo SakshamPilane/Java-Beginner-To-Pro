@@ -1,3 +1,5 @@
+package coding_23;
+
 import java.util.Scanner;
 
 public class SubArrays {
