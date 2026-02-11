@@ -1,0 +1,1 @@
+Count frequency of each character (no collections — use arrays).
