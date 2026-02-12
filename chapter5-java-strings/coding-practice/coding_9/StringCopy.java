@@ -1,3 +1,5 @@
+package coding_9;
+
 import java.util.Scanner;
 
 public class StringCopy {
