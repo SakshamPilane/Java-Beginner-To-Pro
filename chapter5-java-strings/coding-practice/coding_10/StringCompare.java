@@ -1,3 +1,5 @@
+package coding_10;
+
 import java.util.Scanner;
 
 public class StringCompare {
