@@ -1,3 +1,5 @@
+package coding_8;
+
 import java.util.Scanner;
 
 public class FirstRepeating {
