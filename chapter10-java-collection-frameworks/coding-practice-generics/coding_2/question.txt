@@ -1,0 +1,5 @@
+Write a static generic method:
+Test it with:
+int
+String
+custom object
