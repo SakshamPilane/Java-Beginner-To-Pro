@@ -2,15 +2,15 @@ package coding_1;
 
 public class Container<T> {
 
-    private T value;
+    private T typeValue;
 
-    public void setValue(T value)
+    public void setValue(T typeValue)
     {
-        this.value = value;
+        this.typeValue = typeValue;
     }
 
     public T getValue()
     {
-        return value;
+        return typeValue;
     }
 }
