@@ -1,6 +1,6 @@
 package coding_1;
 
-public class Test {
+class Test {
     public static void main(String[] args) {
         Container<String> c1 = new Container<>();
         c1.setValue("Saksham");
