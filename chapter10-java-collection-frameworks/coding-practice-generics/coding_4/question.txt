@@ -1,0 +1,4 @@
+Generic Pair Class
+Store two values
+Add getters
+Print both values
