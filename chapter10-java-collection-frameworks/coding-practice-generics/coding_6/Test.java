@@ -1,6 +1,6 @@
 package coding_6;
 
-public class Test {
+class Test {
     public static void main(String[] args) {
         Calculator<Integer> calcTestObj1 = new Calculator<>();
         System.out.println("Square of 13 = " + calcTestObj1.square(13));
