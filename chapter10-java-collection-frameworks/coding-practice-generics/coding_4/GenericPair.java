@@ -1,6 +1,6 @@
 package coding_4;
 
-public class GenericPair <T, V>{
+class GenericPair <T, V>{
     private T value1;
     private V value2;
 

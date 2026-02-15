@@ -1,6 +1,6 @@
 package coding_6;
 
-public class Calculator <T extends Number>{
+class Calculator <T extends Number>{
 
     public double square(T value)
     {

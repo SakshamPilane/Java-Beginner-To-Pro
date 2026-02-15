@@ -1,6 +1,6 @@
 package coding_1;
 
-public class Container<T> {
+class Container<T> {
 
     private T typeValue;
 
