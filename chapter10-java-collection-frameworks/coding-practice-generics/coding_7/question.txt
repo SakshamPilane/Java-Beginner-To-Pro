@@ -1,0 +1,2 @@
+Sum of Numbers (Generic Method)
+Loop an array and sum using .doubleValue()
