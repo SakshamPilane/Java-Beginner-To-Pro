@@ -1,0 +1,4 @@
+Wildcard Method — Read Only
+Create method: printNumbers(Number[] arr)
+Then rewrite it conceptually using: <? extends Number>
+Explain: Why you can read? Why you cannot add?
