@@ -3,7 +3,7 @@ package coding_11;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         ArrayList<Double> list = new ArrayList<>();
         list.add(12.3);
