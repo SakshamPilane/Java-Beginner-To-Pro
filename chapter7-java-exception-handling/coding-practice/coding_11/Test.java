@@ -1,6 +1,6 @@
 package coding_11;
 
-public class Test {
+class Test {
     public static double divide(double a, double b) throws ArithmeticException
     {
         if (b == 0)
