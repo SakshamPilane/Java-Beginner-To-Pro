@@ -1,0 +1,1 @@
+Insert 10 numbers into an ArrayList and print them using for-each loop.

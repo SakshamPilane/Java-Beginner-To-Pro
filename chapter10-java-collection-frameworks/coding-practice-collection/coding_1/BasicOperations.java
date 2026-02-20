@@ -2,7 +2,7 @@ package coding_1;
 
 import java.util.*;
 
-public class BasicOperations {
+class BasicOperations {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         int element, index;
