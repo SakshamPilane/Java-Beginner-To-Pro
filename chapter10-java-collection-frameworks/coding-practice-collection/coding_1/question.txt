@@ -1,0 +1,1 @@
+Create an ArrayList of integers and perform: add, remove, get, size operations.
