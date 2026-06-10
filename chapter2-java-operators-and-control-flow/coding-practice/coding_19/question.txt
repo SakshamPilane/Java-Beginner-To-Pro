@@ -1,0 +1,1 @@
+Input numbers and perform bitwise operations based on all existing bitwise operators in java.
