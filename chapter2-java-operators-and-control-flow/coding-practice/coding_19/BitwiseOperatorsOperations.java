@@ -27,8 +27,7 @@ public class BitwiseOperatorsOperations {
         System.out.println("Bitwise XOR: " + bitwiseNumber1 + " ^ " + bitwiseNumber2 + " = " + bitwiseXOR + " that is => " + (number1 ^ number2));
 
         // Bitwise NOT => if 1 then 0 if 0 then 1
-        // example => ~4 => 00000000000000000000000000000100 => 11111111111111111111111111111011 next (00000000000000000000000000000100(4) + 1 => 5) to get value and just add negative sign as left most bit is 1 => -5
-        // similarly => ~5 => 00000000000000000000000000000101 => 11111111111111111111111111111010 next (00000000000000000000000000000101(5) + 1 => 6) to get value and just add negative sign as left most bit is 1 => -6
+        //~Number works in 2 step where to find negation u have to first negate 1 to 0 and 0 to 1 in bits of number that is for 4 => bitwise => ~(00000000000000000000000000000100) => (1111111111111111111111111111011) + 1 => 1111111111111111111111111111101 => -5
         // answer => -5 + -6 = -11
         String bitwiseNOT = String.format("%32s", Integer.toBinaryString(~number1 + ~number2)).replace(" ", "0");
         System.out.println("Bitwise NOT / Compliment: ~" + bitwiseNumber1 + " + ~" + bitwiseNumber2 + " = " + bitwiseNOT + " that is => " + (~number1 + ~number2));
