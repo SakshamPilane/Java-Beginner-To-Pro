@@ -1,0 +1,2 @@
+Power of two check — given an int n, determine if it's a power of 2 using a bitwise one-liner (no loops, no Math.pow/log).
+Then explain why the trick works in terms of binary representation.

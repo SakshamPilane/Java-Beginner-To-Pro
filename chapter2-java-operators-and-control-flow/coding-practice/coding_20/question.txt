@@ -1,0 +1,2 @@
+Swap two integers without a temporary variable — write it two ways: (a) using only +/-, and (b) using only ^ (XOR).
+For each, briefly note one real risk with the arithmetic version that the XOR version doesn't have.

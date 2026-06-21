@@ -1,0 +1,1 @@
+GCD of two numbers — implement the Euclidean algorithm using a while loop and %.
