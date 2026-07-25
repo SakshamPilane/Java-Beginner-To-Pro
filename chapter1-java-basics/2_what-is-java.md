@@ -9,8 +9,8 @@ Read each question, try to answer it yourself, then **click to reveal the answer
 
 <details>
 <summary>💡 Show Answer</summary>
-Java was developed at **Sun Microsystems** in **1995** (not 1975 😉).  
-It was designed by **James Gosling**, often called the "Father of Java". 👨‍💻
+Java was developed at Sun Microsystems in 1995 (not 1975 😉).  
+It was designed by James Gosling, often called the "Father of Java". 👨‍💻
 </details>
 
 ---
@@ -19,7 +19,7 @@ It was designed by **James Gosling**, often called the "Father of Java". 👨‍
 
 <details>
 <summary>💡 Show Answer</summary>
-Java was inspired by **C and C++**, but it was designed with an **easier syntax** and removed many confusing/unsafe features of C++.
+Java was inspired by C and C++, but it was designed with an easier syntax and removed many confusing/unsafe features of C++.
 </details>
 
 ---
@@ -28,7 +28,7 @@ Java was inspired by **C and C++**, but it was designed with an **easier syntax*
 
 <details>
 <summary>💡 Show Answer</summary>
-Java is a **general-purpose, object-oriented, class-based** programming language.  
+Java is a general-purpose, object-oriented, class-based programming language.  
 It is also:  
 - Reliable ✅  
 - Portable 🌍  
@@ -41,7 +41,7 @@ It is also:
 
 <details>
 <summary>💡 Show Answer</summary>
-Java is used by **millions of developers** and runs on **billions of devices** across different platforms — from web apps to Android to enterprise software. 📱💻🌐
+Java is used by millions of developers and runs on billions of devices across different platforms — from web apps to Android to enterprise software. 📱💻🌐
 </details>
 
 ---
@@ -50,7 +50,7 @@ Java is used by **millions of developers** and runs on **billions of devices** a
 
 <details>
 <summary>💡 Show Answer</summary>
-The name **“Java”** was inspired by a type of coffee from the **Indonesian island of Java** ☕.  
+The name “Java” was inspired by a type of coffee from the Indonesian island of Java ☕.  
 That’s why the Java logo has a coffee cup!
 </details>
 
@@ -60,8 +60,40 @@ That’s why the Java logo has a coffee cup!
 
 <details>
 <summary>💡 Show Answer</summary>
-Java was originally called **"Oak"** 🌳, after an oak tree outside James Gosling’s office.  
+Java was originally called "Oak" 🌳, after an oak tree outside James Gosling’s office.  
 Later, the name was changed to avoid trademark issues.
+</details>
+
+---
+
+❓ **7. Is Java compiled or interpreted?**
+
+<details>
+<summary>💡 Show Answer</summary>
+Both! 🤯 Java is first compiled by `javac` into bytecode (`.class` files), and then that bytecode is interpreted (and JIT-compiled) by the JVM at runtime.  
+This hybrid model is exactly what gives Java its portability + speed balance.
+</details>
+
+---
+
+❓ **8. What does the phrase "platform independent" actually mean?**
+
+<details>
+<summary>💡 Show Answer</summary>
+It means the same compiled program (bytecode) runs on any operating system — Windows, macOS, Linux — as long as a JVM is installed for that OS.  
+👉 The JVM is platform-dependent, but your bytecode is platform-independent.
+</details>
+
+---
+
+❓ **9. Is Java the same as JavaScript?**
+
+<details>
+<summary>💡 Show Answer</summary>
+No! ❌ Despite the similar name, they are completely different languages.  
+- Java → compiled, statically-typed, runs on the JVM.  
+- JavaScript → interpreted, dynamically-typed, runs in browsers.  
+The name overlap was a 1990s marketing decision, not a technical relationship. 😅
 </details>
 
 ---
