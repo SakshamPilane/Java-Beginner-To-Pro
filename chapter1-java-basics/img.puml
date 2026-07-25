@@ -1,0 +1,63 @@
+@startuml
+' ============================================================
+'  JDK / JRE / JVM structure diagram (editable source)
+'  Renders the same block diagram as img.png
+'  Render with:  plantuml img.puml        -> img.png
+'  Or paste into: https://www.plantuml.com/plantuml
+' ============================================================
+
+skinparam rectangle {
+  BackgroundColor #F5F5F5
+  BorderColor #333333
+}
+skinparam package {
+  BackgroundColor #FFFFFF
+  BorderColor #000000
+}
+skinparam shadowing false
+skinparam defaultFontName "Helvetica"
+
+package "JDK" {
+
+  rectangle "Java Development Tools" as JDT
+  rectangle "Java Docs" as DOCS
+
+  package "JRE" {
+
+    rectangle "Java SE" as JSE
+    rectangle "Java Class Libraries" as JCL
+
+    package "JVM" {
+      rectangle "Class Loader" as CL
+      rectangle "Bytecode Verifier" as BV
+
+      package "Execution Engine" {
+        rectangle "JIT Compiler" as JIT
+        rectangle "Interpreter" as INT
+      }
+
+      package "Runtime Data Area" {
+        rectangle "Native Method Stack" as NMS
+        rectangle "PC Registers" as PC
+        rectangle "Stack" as STACK
+        rectangle "Heap" as HEAP
+        rectangle "Method Area" as MA
+      }
+    }
+  }
+}
+
+' ---- flow ----
+JDT --> JRE
+JSE --> JCL
+JCL --> CL
+CL  --> BV
+BV  --> INT
+
+INT --> NMS
+INT --> PC
+INT --> STACK
+INT --> HEAP
+INT --> MA
+
+@enduml

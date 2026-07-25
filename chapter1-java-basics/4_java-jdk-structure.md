@@ -36,6 +36,40 @@ The **JVM** is where the magic happens — it executes Java bytecode. Components
 
 ---
 
+## 🔑 The One-Line Relationship
+
+> **JDK ⊃ JRE ⊃ JVM**  
+> The JDK **contains** the JRE, and the JRE **contains** the JVM.
+
+| You have… | You can… |
+|-----------|----------|
+| **JVM** only | Run bytecode (the engine alone) |
+| **JRE** (JVM + libraries) | **Run** Java programs |
+| **JDK** (JRE + tools) | **Develop + compile + run** Java programs |
+
+🍱 **Analogy:** Think of a restaurant —
+- **JVM** = the *chef* who actually cooks (executes) the dish.
+- **JRE** = the *kitchen* (chef + ingredients/utensils) — enough to serve food.
+- **JDK** = the *whole restaurant* (kitchen + recipes + staff) — enough to create new dishes.
+
+---
+
+## 🔄 Compile → Run Flow
+
+```
+ Hello.java  ──javac──▶  Hello.class (bytecode)  ──JVM──▶  Program runs
+  (source)   (JDK tool)      (portable)          (JRE)      (output)
+```
+
+- **`javac`** (a JDK tool) compiles source → bytecode.
+- **`java`** launches the **JVM**, which loads, verifies, and executes that bytecode.
+
+---
+
 ## 🖼️ Block Diagram of Java Structure
 
 ![img.png](img.png)
+
+> ✏️ **Editable source:** the diagram above is generated from [`img.puml`](img.puml) (PlantUML).
+> To regenerate after editing: `plantuml img.puml` — or paste it into
+> [plantuml.com](https://www.plantuml.com/plantuml).

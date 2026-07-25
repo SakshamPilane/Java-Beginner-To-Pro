@@ -109,3 +109,23 @@ Java isn’t just a language — it’s a **platform** used in almost every fiel
 
 👉 **Purpose**: Java is everywhere — from your **Android phone** to **cloud servers** powering the web. ☕
 
+---
+
+## 🏷️ The 11 Java "Buzzwords" (Sun's Original Pitch)
+
+When Sun released Java, they described it with **11 buzzwords**. Interviewers love these 👇
+
+1. **Simple** — clean syntax, no pointers/manual memory
+2. **Object-Oriented** — everything revolves around classes & objects
+3. **Portable** — bytecode runs anywhere (WORA)
+4. **Platform Independent** — thanks to the JVM
+5. **Secured** — bytecode verification, no direct memory access
+6. **Robust** — strong type-checking, GC, exception handling
+7. **Architecture Neutral** — no dependence on CPU/OS architecture
+8. **Dynamic** — classes loaded at runtime as needed
+9. **Interpreted** — bytecode is interpreted (+ JIT) by the JVM
+10. **High Performance** — JIT compilation gets close to native speed
+11. **Multithreaded & Distributed** — built-in threads + networking APIs
+
+> 🧠 **Memory hook:** *"Simple ObjectsPtolemy Prefers, Secure Robust Architecture, Dynamic Interpreted High-performance Multithreading."* (Make your own — the act of building the mnemonic is what makes it stick.)
+
