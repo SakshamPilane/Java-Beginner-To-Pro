@@ -91,7 +91,7 @@ Not just `-1 / 0 / 1` — it returns a **difference**:
 
 ```java
 "a".compareTo("b");        // -1   ('a' - 'b' = 97 - 98)
-"apple".compareTo("apricot"); // -3 ('p' - 'r' at the first mismatch, index 2)
+"apple".compareTo("apricot"); // -2 ('p' - 'r' at the first mismatch, index 2)
 "Java".compareTo("Java");  //  0   identical
 "Java".compareTo("Jav");   //  1   no mismatch → length difference (4 - 3)
 "A".compareTo("a");        // -32  uppercase sorts BEFORE lowercase
